@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    background-color: rgb(225, 225, 225);
+    margin: auto 0;
+    padding: 0px 70px;
+    font-size: 60px;
+    font-weight: lighter;
+}
+header img:hover{
+    cursor: pointer;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 130px;
+    border: solid black 1px;
+}
+
+.top-hr{
+    position: relative;
+    top: 30px;
+    width: 400px;
+    display: flex;
+    margin-right: 10px
+}
+.bottom-hr{
+    position: relative;
+    bottom: 30px;
+    width: 400px;
+    display: flex;
+    margin-right: 10px
+}

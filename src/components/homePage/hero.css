@@ -1,0 +1,31 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px
+}
+
+.column-1, .column-2, .column-3, .column-4{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1 img, .column-2 img, .column-3 img, .column-4 img, .column-5 img{
+    width: 200px;
+    border-radius: 10px;
+    margin: 35px;
+    transition: .4s
+}
+.column-1 img:hover, .column-2 img:hover, .column-3 img:hover, .column-4 img:hover, .column-5 img:hover{
+    box-shadow: 5px 5px 10px 2px rgb(217, 217, 217);
+    cursor: pointer;
+    z-index: 2
+}
+
+.column-1 {margin-top: 160px;}
+
+.column-3{margin-top: 100px}
+
+.column-4 {margin-top: 50px}
+
+.column-5 {margin-top: 160px}

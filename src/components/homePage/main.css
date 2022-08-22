@@ -1,0 +1,57 @@
+h1{
+    text-align: right;
+    margin: 50px 100px 20px;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+h3{
+    text-align: right;
+    font-weight: lighter;
+    margin: 10px 100px;
+    font-size: 20px;
+}
+
+h2{
+    text-align: right;
+    font-weight: lighter;
+    margin: 10px 100px;
+    font-size: 30px;
+}
+
+section h1{
+    position: relative;
+    width: 200px;
+    text-align: left;
+    border-bottom: solid rgb(183, 183, 183) 1px;
+    border-radius: 5px;
+    transition: .2s
+}
+
+section h1:hover{
+    cursor: pointer;
+    background-color: rgb(201, 201, 201);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 4px -4px rgb(100, 100, 100);
+    z-index: 2;
+}
+
+.cat-recipe-cards, .dog-recipe-cards{
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px 50px
+}
+.recipe-cards img{
+    height: 200px;
+    width: 230px;
+    border: solid rgb(183, 183, 183) 1px;
+    margin: 0px 50px;
+    transition: .3s
+}
+.recipe-cards img:hover{
+    box-shadow: 5px 5px 10px 2px rgb(217, 217, 217);
+    cursor: pointer;
+    z-index: 2
+}
+
