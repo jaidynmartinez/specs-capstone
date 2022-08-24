@@ -1,4 +1,5 @@
 header{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,6 +9,7 @@ header{
     padding: 0px 70px;
     font-size: 60px;
     font-weight: lighter;
+    top:0
 }
 header img:hover{
     cursor: pointer;

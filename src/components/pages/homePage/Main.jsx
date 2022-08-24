@@ -4,11 +4,7 @@ import './main.css'
 
 const Main = () => {
     return(
-        <div>
-            <h1>Treat Your Pet!</h1>
-            <h3>Want a healthier alternative to store-bought treats?</h3>
-            <h3>Don't know if your fur-baby can have a certain snack?</h3>
-            <h2>Check out all our homemade recipes, or add your own!</h2>
+        <div className='main-body'>
             <section className='recipe-cards'>
                 <h1>Dogs</h1>
                 <div className='dog-recipe-cards'>

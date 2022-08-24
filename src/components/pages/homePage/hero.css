@@ -1,8 +1,32 @@
+
+.main-body{
+    margin: 0px 100px;
+}
 .hero{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 0px
+}
+h1{
+    text-align: right;
+    margin: 50px 30px 40px 0px;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+h3{
+    text-align: right;
+    font-weight: lighter;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-top: 60px
 }
 
 .column-1, .column-2, .column-3, .column-4{
@@ -13,7 +37,7 @@
 .column-1 img, .column-2 img, .column-3 img, .column-4 img, .column-5 img{
     width: 200px;
     border-radius: 10px;
-    margin: 35px;
+    margin: 30px;
     transition: .4s
 }
 .column-1 img:hover, .column-2 img:hover, .column-3 img:hover, .column-4 img:hover, .column-5 img:hover{

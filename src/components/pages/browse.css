@@ -1,9 +1,31 @@
-.category-div{
-    background-color: gray;
-    width: 600px;
-    height: 200px;
-}
 .container{
     display: flex;
     justify-content: center;
 }
+
+.category-div{
+    background-color: rgb(157, 157, 157);
+    width: 600px;
+    height: 180px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-div h2{
+    padding: 1px 10px;
+    color: white;
+    margin: 30px 40px;
+    border-radius: 10px;
+    transition: .2s
+}
+.category-div h2:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    z-index: 2
+}
+
