@@ -4,7 +4,7 @@ import './header.css'
 
 const Header = () =>{
     return(
-        <div>
+        <div >
             <hr className='top-hr'/>
             <header>
                 <img className='logo' src='https://cdn2.iconfinder.com/data/icons/1-animal-nature/16/bone_Line_pixelicons-512.png' alt='logo'/> 

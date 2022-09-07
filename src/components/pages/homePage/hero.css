@@ -8,15 +8,27 @@
     justify-content: center;
     margin-top: 0px
 }
+
+.header-pic-div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px
+}
+.header-pic{
+    height: 300px;
+    border-radius: 3px;
+}
+
 h1{
-    text-align: right;
+    text-align: center;
     margin: 50px 30px 40px 0px;
     font-size: 45px;
     font-weight: lighter;
 }
 
 h3{
-    text-align: right;
+    text-align: center;
     font-weight: lighter;
     margin: 10px 30px;
     font-size: 20px;
@@ -32,19 +44,19 @@ h2{
 .column-1, .column-2, .column-3, .column-4{
     display: flex;
     flex-direction: column;
+    margin: 30px
 }
 
 .column-1 img, .column-2 img, .column-3 img, .column-4 img, .column-5 img{
-    width: 200px;
+    max-width: 200px;
+    max-height: 260px;
     border-radius: 10px;
-    margin: 30px;
-    transition: .4s
-}
-.column-1 img:hover, .column-2 img:hover, .column-3 img:hover, .column-4 img:hover, .column-5 img:hover{
     box-shadow: 5px 5px 10px 2px rgb(217, 217, 217);
-    cursor: pointer;
-    z-index: 2
+    margin: 30px 0px
 }
+
+
+
 
 .column-1 {margin-top: 160px;}
 
@@ -53,3 +65,32 @@ h2{
 .column-4 {margin-top: 50px}
 
 .column-5 {margin-top: 160px}
+
+.treat-hr{
+    border: 3px solid #8be0d6;
+    margin-bottom: 50px
+}
+.bunImg-div {
+    display: flex;
+    justify-content: center;
+}
+.bunImg1{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+.bunImg2{
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+}
+.gerbilImg{
+    height: 200px;
+    width: 240px;
+    margin: 10px 20px 10px 10px;
+}
+.ferretImg{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+}

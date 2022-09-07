@@ -1,68 +1,58 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { Route, Routes } from 'react-router-dom'
+import axios from 'axios'
 
 
 import Nav from './components/Nav'
 
-import Main from './components/pages/homePage/Main'
-import Hero from './components/pages/homePage/Hero'
-import Browse from './components/pages/Browse'
-import RecipeCard from './components/RecipeCard'
-import Nutrition from './components/pages/Nutrition'
-import SafeFoodCard from './components/SafeFoodCard'
-
-import recipeData from './recipeData'
-import safeFoodData from './foodData'
-
+import Home from './components/pages/homePage/Home'
+import Recipes from './components/pages/recipes/Recipes'
+import RecipeCard from './components/pages/recipes/RecipeCard'
+import Nutrition from './components/pages/nutrition/Nutrition'
+import RecipeDetail from './components/pages/recipes/RecipeDetail'
+import RecipeForm from './components/pages/recipes/RecipeForm'
 
 import './App.css'
 
 const App = () => {
+  const [recipeData, setRecipeData] = useState([])
 
-  const recipeCards = recipeData.map(recipe => {
-    return (
-      <RecipeCard 
-        key={recipe.id}
-        img={recipe.img}
-        title={recipe.title}
-        petType={recipe.petType}
-      />
-    )
-  })
+        useEffect(()=>{
+            axios.get('http://localhost:5000/getAllRecipes')
+            .then(res => {
+                // console.log(res);
+                setRecipeData(res.data);
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+        }, [])
 
-  const safeFoodCard = safeFoodData.map(safeFood => {
-    return (
-      <SafeFoodCard 
-        key={safeFood.id}
-        pet={safeFood.pet}
-        nutrition={safeFood.nutrition}
-        description={safeFood.description}
-        safeFruits={safeFood.safeFruits}
-        avoidFruits={safeFood.avoidFruits}
-        safeVeggies={safeFood.safeVeggies}
-        avoidVeggies={safeFood.avoidVeggies}
-        otherSafe={safeFood.otherSafe}
-        otherAvoid={safeFood.otherAvoid}
-      />
-    )
-  })
+
+  const newRecipe = (e, initialValues) => {
+    e.preventDefualt()
+
+    console.log(initialValues)
+  }
+
     return(
         <div className='App'>
             <Nav />
-            <Route exact path='/'>
-              <Hero />
-              <Main />
-            </Route>
-            
-            <Route path='/browse'>
-              <Browse />
-              <section className='card-list'>{recipeCards}</section>
-            </Route>
 
-            <Route path='/nutrition'>
-              <Nutrition />
-              {safeFoodCard}
-            </Route>
+            <Routes>
+
+              <Route exact path='/' element={<Home />} />
+              
+              <Route exact path='/recipes' element={<Recipes recipeData={recipeData}/>} />
+
+              <Route exact path='/recipes/create-your-own' element={<RecipeForm newRecipe={newRecipe}/>} />
+
+              <Route exact path='/recipes/:recipeId' element={<RecipeDetail />} />
+
+              <Route path='/nutrition' element={<Nutrition />} />
+
+            </Routes>
         </div>
     )
 }

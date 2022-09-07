@@ -1,0 +1,82 @@
+.detail-background{
+    margin: 60px 150px 200px
+}
+
+.detail-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-hr{
+    border-color: #8be0d6;
+    border-width: 3px;
+    border-style: solid;
+    margin: 0px 20px 0px 0px;
+    height: 250px
+}
+.detail-title{
+    margin-top: 0px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.detail-description{
+    text-align: left;
+    margin: 40px 20px;
+}
+.detail-title{
+    text-decoration: underline 1px
+}
+
+.cover-img img{
+    max-height: 200px;
+    max-width: 300px;
+    border: solid #6eb1aa 1px;
+    border-radius: 10px;
+}
+
+
+.detail-ingredients{
+    display: flex;
+    flex-direction: column;
+    background-color: #6eb1aa;
+    max-height: 270px;
+    border-radius: 100px;
+    margin: 100px 100px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px gray;
+}
+.detail-ingredient{
+    margin: 10px 80px 20px;
+    background-color:#8be0d6;
+    padding: 5px 10px;
+    border-radius: 100px;
+    text-align: center;
+    color: white
+}
+.detail-ingredients-list-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white
+}
+.detail-ingredients-list{
+    margin: 5px 20px;
+    }
+
+.detail-instruction{
+    text-align: left;
+    margin: 30px 0px 100px 30px;
+    text-decoration: underline 1px;
+}
+
+.detail-instructions{
+    box-shadow: 0px 5px 10px orange;
+    border-radius: 10px;
+    padding: 20px 20px 200px 20px;
+}
+.detail-ol li{
+    font-weight: lighter;
+    margin: 30px 0px 
+}
+

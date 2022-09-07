@@ -1,0 +1,81 @@
+.foodCard-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foodCard-background{
+    font-weight: lighter;
+    background-color: #6eb1aa;
+    height: 60px;
+    width: 900px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+    padding: 0px 10px 10px;
+    margin: 50px 0px 0px;
+    border-radius: 3px;
+    color: white
+}
+
+.foodCard-h1{
+    text-align: left;
+    margin-bottom: 0px;
+    height: 50px;
+    width: 400px
+}
+.foodCard-h1:hover{
+    cursor: default
+}
+.expand{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: .2s
+}
+.expand:hover{
+    box-shadow: 2px 2px 10px rgb(62, 62, 62);
+    z-index: 2
+}
+
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid rgb(174, 174, 174) 1px;
+    border-radius: 0px 0px 5px 5px;
+    width: 910px
+}
+.dropdown-list{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px 0px 5px 12px;
+}
+.dropdown-list li{
+    margin: 1px
+}
+.SF-dropdown-category{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 5px;
+    font-size: 15px;
+    width: 130px;
+}
+.SF-dropdown-category h2{
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: left;
+}
+#vl{
+    width: 1px;
+    margin: 5px;
+    border-style: solid;
+    color: orange
+}
+
+footer{
+    height: 100px
+}

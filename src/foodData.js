@@ -3,7 +3,7 @@ const safeFoodData = [
         'id': 1,
         'pet': 'Dog',
         'description': 'Omnivores',
-        'nutrition': 'eat it',
+        'nutrition': 'Dogs enjoy a variety in their diet',
         'safeFruits': [
             'apple',
             'banana',
@@ -117,7 +117,7 @@ const safeFoodData = [
             'corn',
             'ONION',
             'GARLIC',
-            'mushroom(absolutely NO WILD)'
+            'mushroom (NO WILD)'
         ],
         'otherSafe': [
             'fish (boiled is actually very healthy, avoid bones)',
@@ -147,13 +147,61 @@ const safeFoodData = [
         'id': 3,
         'pet': 'Hamster / Gerbil',
         'description': 'Omnivore',
-        'nutrition': '',
-        'safeFruits': [],
-        'avoidFruits': [],
-        'safeVeggies': [],
-        'avoidVeggies': [],
-        'otherSafe': [],
-        'otherAvoid': []
+        'nutrition': 'Hamsters and Gerbils are both omnivores, meaning they can eat both animal and plant material! Providing your hamster or gerbil with different treats is a fun way to bond with your pet and create a good and healthy relationship! With that said, these treats should never substitute your rodents diet, and should only be about 5% of their daily food intake. Many FRUITS are high in sugar and should be fed in VERY SMALL amounts. Foods that are CAPTILIZED should never be fed to your hamster or gerbil, and can cause serious illness. Others in the "avoid" category are technically safe to eat, but in extreme moderation, or not at all.',
+        'safeFruits': [
+            'apple (skinned)',
+            'banana',
+            'sweet potato',
+            'pears',
+            'blueberries',
+            'strawberries',
+            'plums',
+            'coconut',
+            'figs',
+            'grapes (half)',
+            'kiwi fruit',
+            'mango',
+            'peach',
+            'melon',
+            'watermelon'
+        ],
+        'avoidFruits': [
+            'APPLE SEEDS',
+            'tomato'
+        ],
+        'safeVeggies': [
+            'cucumbers',
+            'carrots',
+            'spinach',
+            'squash',
+            'pumpkin',
+            'green beans',
+            'peas'
+        ],
+        'avoidVeggies': [
+            'UNWASHED VEGGIES',
+            'sweet peppers',
+            'potato'
+        ],
+        'otherSafe': [
+            'mealworms',
+            'crickets',
+            'boiled eggs',
+            'plain tofu',
+            'timothy hay',
+            'low-fat yogurt',
+            'low-fat cottage cheese'
+        ],
+        'otherAvoid': [
+            'CHOCOLATE',
+            'ALMONDS',
+            'citrus fruits',
+            'pork',
+            'beef',
+            'rhubarb leaves/ raw rhubarb',
+            'PEANUTS'
+
+        ]
     },
     {
         'id': 4,

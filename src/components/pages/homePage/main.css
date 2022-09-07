@@ -18,19 +18,23 @@ section h1:hover{
     z-index: 2;
 }
 
-.cat-recipe-cards, .dog-recipe-cards{
+.enrich-h1{
+    text-align: right;
+}
+
+.cat-enrich-cards, .dog-enrich-cards{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 50px 0px;
 }
-.recipe-cards img{
+.enrich-cards img{
     height: 200px;
     width: 230px;
     border: solid rgb(183, 183, 183) 1px;
     margin: 0px 50px;
     transition: .3s
 }
-.recipe-cards img:hover{
+.enrich-cards img:hover{
     box-shadow: 5px 5px 10px 2px rgb(217, 217, 217);
     cursor: pointer;
     z-index: 2
