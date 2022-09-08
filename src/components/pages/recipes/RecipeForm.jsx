@@ -1,6 +1,5 @@
 import React from 'react'
 import { Formik, Form, Field, ErrorMessage, FieldArray } from 'formik' 
-
 import * as Yup from 'yup'
 import axios from 'axios'
 
@@ -8,21 +7,18 @@ import './recipeForm.css'
 
 const ingredientInput = ''
 
+
 const initialValues = {
-    coverImg: null,
-    fName: '',
-    lName: '',
-    title: '',
-    petType: '',
-    description: '',
-    ingredients: [''],
-    instructions: [''],
+    author: 'Jaidyn Martinez',
+    title: 'Pumpkin Yogurt Treats',
+    petType: 'dog',
+    description: 'These delicious treats also help with upset tummies!',
+    ingredients: 'Pumpkin Puree, Plain Yogurt',
+    instructions: ['Mix the puree with the yogurt to create an even mixture', 'Pour mixture into mold of your choice or ice tray', 'Set in freezer for at least 12 hours', 'Remove treats from the mold and let thaw for a couple minutes before feeding and enjoy!'],
 }
 
 const onSubmit = (values) => {
-    // values.ingredients = values.ingredients.split(", ");
-    // values.instructions.push({step: values.instructions})
-
+    values.ingredients = values.ingredients.split(', ')
 
     axios.post('http://localhost:5000/create', values)
         .then(res => res.data)
@@ -32,14 +28,10 @@ const onSubmit = (values) => {
 
 
 const validationSchema = Yup.object({
-    // fName: Yup.string().required('Required Field'),
-    // lName: Yup.string().required('Required Field'),
-    // petType: Yup.string().required('Required Field'),
-    // title: Yup.string().required('Required Field'),
-    // ingredients: Yup.string().required('Invalid Format'),
-    // step1: Yup.string().required('Required Field'),
-    // step2: Yup.string().required('Required Field'),
-    // step3: Yup.string().required('Required Field')
+    author: Yup.string().required('Required Field'),
+    petType: Yup.string().required('Required Field'),
+    title: Yup.string().required('Required Field'),
+    ingredients: Yup.string().required('Invalid Format')
 })
 
 const RecipeForm = () =>{
@@ -57,12 +49,12 @@ const RecipeForm = () =>{
                     method='post'
                     action= '/'
                     >
-                    {({values, handleChange}) => (
+                    {({values, handleChange, setFieldValue}) => (
                     <Form>
                         <div className='div'>
-                            <label htmlFor='fName'>First Name: <span className='star'>*</span></label>
-                            <Field  id='input' name='fName'
-                                value={values.fName}
+                            <label htmlFor='author'>First and Last Name: <span className='star'>*</span></label>
+                            <Field  id='input' name='author'
+                                value={values.author}
                                 onChange={(e) => {
                                     console.log(
                                         "onChange: ", 
@@ -73,24 +65,7 @@ const RecipeForm = () =>{
                                     handleChange(e);
                                 }}
                                 />
-                            <ErrorMessage name= 'fName' component='div'/>
-                        </div>
-                    <hr className='form-hr'></hr>
-                        <div className='div'>
-                            <label htmlFor='lName'>Last Name: <span className='star'>*</span></label>
-                            <Field type='text' id='input' name='lName' 
-                                value={values.lName}
-                                onChange={(e) => {
-                                    console.log(
-                                        "onChange: ", 
-                                        e.target.name, 
-                                        ":",
-                                        e.target.value
-                                    );
-                                    handleChange(e);
-                                }}
-                            />
-                            <ErrorMessage name= 'lName' />
+                            <ErrorMessage name= 'author' component='div'/>
                         </div>
                     <hr className='form-hr'></hr>
                         <div className='div'>
@@ -185,8 +160,7 @@ const RecipeForm = () =>{
                                                 handleChange(e);
                                             }}
                                             />
-                                    
-                                    
+                                        
                                     <div className='buttons-div'>
                                         {index > 0 && (
                                             <button type='button' id='button' onClick={() => remove(index)}>
@@ -209,7 +183,7 @@ const RecipeForm = () =>{
                 )
             }}
     </FieldArray>
-    </div>
+</div>
                         </section>
 
                         <div className='submit-div'>

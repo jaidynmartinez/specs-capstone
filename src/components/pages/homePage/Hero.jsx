@@ -12,7 +12,6 @@ import bunny2 from './images/bunny2.png'
 import gerbil from './images/gerbil.png'
 import ferret from './images/ferret.png'
 import cat from './images/cat.jpeg'
-import pawpsicle from './images/pawpsicle.webp'
 
 import './hero.css'
 
@@ -29,71 +28,48 @@ const Hero = () =>{
                 <section className='column-1'>
                     <div className='first'>
                         <img className='img' src={img7} />
-                        <section className='overlay1'>
-                            <img src={pawpsicle}/>
-                            <div>Fruit Pawpsicle</div>
-                        </section>
                     </div>
                 </section>
                 <section className='column-2'>
                     <div className='first'>
                         <img id='column-2-img-1' src={img2}/>
-                        <div className='overlay1'>
-                            <div>Dog Safe Food List</div>
-                        </div>
                     </div>
                     <div className='first'>
                         <img id='column-2-img-2'src={img9}/>
-                        <div className='overlay1'>
-                            <div>Catnip Treats</div>
-                        </div>
                     </div>
                 </section>
                 <section className='column-3'>
                     <div className='first'>
                         <img id='column-3-img-1' src={img4}/>
-                        <div className='overlay1'>
-                            <div>Pumpkin Spice Balls</div>
-                        </div>
                     </div>
                     <div className='first'>
                         <img id='column-3-img-2' src={img5}/>
-                        <div className='overlay1'>
-                            <div>Goldfish Gel Food</div>
-                        </div>
                     </div>
                 </section>
                 <section className='column-4'>
                     <div className='first'>
                         <img id='column-4-img-1' src={img8}/>
-                        <div className='overlay1'>
-                            <div>Budgie Treats</div>
-                        </div>
                     </div>
                     <div className='first'>
                         <img id='column-4-img-2' src={img1}/>
-                        <div className='overlay1'>
-                            <div>Safe food for Hamsters</div>
-                        </div>
                     </div>
                 </section>
                 <section className='column-5'>
                     <div className='first'>
                         <img src={img3}/>
-                        <div className='overlay1'>
-                            <div>Dogs</div>
-                        </div>
                     </div>
                 </section>
             </div>
             <hr className='treat-hr'></hr>
-            <h1>Treat Your Pet!</h1>
+            {/* <h1>Treat Your Pet!</h1>
             <div className='bunImg-div'>
             <img className='gerbilImg' src={gerbil} />
             <img className='bunImg2' src={bunny2} />
             <img className='ferretImg' src={ferret} />
             <img className='bunImg1' src={bunny1} />
             </div>
+            <h1 className=''>Browse Recipes</h1>
+            <hr className='treat-hr'></hr> */}
         </div>
     )
 }

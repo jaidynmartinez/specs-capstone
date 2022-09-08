@@ -34,12 +34,12 @@ const Recipes = (props) => {
             <div className='container'>
                 <div className='category-div'>
                     <h2 onClick={()=> setType('')}>all</h2>
-                    <h2 onClick={()=> setType('Dog')}>dog</h2>
-                    <h2 onClick={()=> setType('Reptile')}>reptile</h2>
-                    <h2 onClick={()=> setType('Small Animal')}>small animal</h2>
-                    <h2 onClick={()=> setType('Cat')}>cat</h2>
-                    <h2 onClick={()=> setType('Bird')}>bird</h2>
-                    <h2 onClick={()=> setType('Aquatic')}>aquatic</h2>
+                    <h2 onClick={()=> setType('dog')}>dog</h2>
+                    <h2 onClick={()=> setType('reptile')}>reptile</h2>
+                    <h2 onClick={()=> setType('small animal')}>small animal</h2>
+                    <h2 onClick={()=> setType('cat')}>cat</h2>
+                    <h2 onClick={()=> setType('bird')}>bird</h2>
+                    <h2 onClick={()=> setType('aquatic')}>aquatic</h2>
                 </div>
             </div>
                 <h2 className='recipe-title'>Learn quick recipes to TREAT your pet!</h2>

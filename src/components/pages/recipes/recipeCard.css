@@ -8,7 +8,7 @@
 }
 
 .card-container{
-    height: 300px;
+    height: 100px;
     width: 250px;
     background-color: white;
     margin: 60px 10px;
@@ -30,12 +30,11 @@
     flex-direction: column;
     width: 250px;
 }
-.card-contents img{
-    height: 240px;
-    /* margin-bottom: 5px; */
+/* .card-contents img{
+    height: 40px;
     border: solid white 1px;
     border-radius: 5px 5px 0px 0px;
-}
+} */
 .card-description{
     height: 50px;
     background-color: white;
@@ -43,7 +42,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px;
 }
 
 .card-description h3, .card-description h4{

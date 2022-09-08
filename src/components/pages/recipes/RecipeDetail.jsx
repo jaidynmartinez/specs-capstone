@@ -23,9 +23,9 @@ const RecipeDetail =() =>{
                     <h3 className='detail-description'>{recipe.description}</h3>
                     <p className='detail-author'>By: {recipe.author}</p>
                 </div>
-                <div className='cover-img'>
+                {/* <div className='cover-img'>
                     <img src={`${recipe.img}`} alt='photo'/>
-                </div>
+                </div> */}
             </div>
 
             <div className='detail-ingredients'>
