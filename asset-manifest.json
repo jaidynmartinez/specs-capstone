@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/specs-capstone/static/css/main.d5ac399e.css",
+    "main.js": "/specs-capstone/static/js/main.372a09b6.js",
+    "static/media/img1.JPG": "/specs-capstone/static/media/img1.88e7c64a5b39cd8d078f.JPG",
+    "static/media/img4.jpg": "/specs-capstone/static/media/img4.63ba81b99762e20135e4.jpg",
+    "static/media/bunny2.png": "/specs-capstone/static/media/bunny2.cba17209b6fe76bc8e07.png",
+    "static/media/img7.JPG": "/specs-capstone/static/media/img7.8a2e8f1577b0030f9727.JPG",
+    "static/media/img3.jpg": "/specs-capstone/static/media/img3.33043cd2b28154ee75c6.jpg",
+    "static/media/ferret.png": "/specs-capstone/static/media/ferret.65963d7b269f28d93b5b.png",
+    "static/media/img2.JPG": "/specs-capstone/static/media/img2.e8d89b597692b9c66f60.JPG",
+    "static/media/img9.jpg": "/specs-capstone/static/media/img9.3f082e0d6124f8d3517f.jpg",
+    "static/media/gerbil.png": "/specs-capstone/static/media/gerbil.f04152bf7e4a02756d7b.png",
+    "static/media/img8.jpg": "/specs-capstone/static/media/img8.e608c714f0945d54dba7.jpg",
+    "static/media/bunny1.png": "/specs-capstone/static/media/bunny1.c328bb49ea21fd223c4c.png",
+    "static/media/cat.jpeg": "/specs-capstone/static/media/cat.a134bff1ae921eb83f41.jpeg",
+    "static/media/recipe-top-pic.jpeg": "/specs-capstone/static/media/recipe-top-pic.36abaea671319079bdad.jpeg",
+    "static/media/img5.jpg": "/specs-capstone/static/media/img5.bb47589a88886b5697c9.jpg",
+    "index.html": "/specs-capstone/index.html",
+    "main.d5ac399e.css.map": "/specs-capstone/static/css/main.d5ac399e.css.map",
+    "main.372a09b6.js.map": "/specs-capstone/static/js/main.372a09b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5ac399e.css",
+    "static/js/main.372a09b6.js"
+  ]
+}
